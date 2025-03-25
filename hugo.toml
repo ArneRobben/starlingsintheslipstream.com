@@ -6,8 +6,17 @@ title = 'Starlings in the Slipstream'
 theme = 'PaperMod'
 
 # Site settings
-pagination.pagerSize = 5
 defaultContentLanguage = 'en'
+
+# Pagination
+pagerSize = 5
+pagination.path = "page"
+
+# Allow HTML in markdown
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
   # Theme parameters
@@ -17,6 +26,17 @@ defaultContentLanguage = 'en'
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+
+  # Home page settings
+  mainSections = ["posts"]
+  showAllPostsOnHomePage = true
+  showAllPostsArchive = true
+  showFullTextinMainSection = true # Show full blog post content
+
+  # List view settings
+  [params.list]
+    showFullContent = true
+    disableSpecial1stPost = true
   
 [menu]
   [[menu.main]]
