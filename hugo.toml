@@ -19,6 +19,8 @@ pagination.path = "page"
       unsafe = true
 
 [params]
+  # Custom CSS
+  customCSS = ["css/custom.css"]
   # Theme parameters
   defaultTheme = 'auto'
   ShowReadingTime = true

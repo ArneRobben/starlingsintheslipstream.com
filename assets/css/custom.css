@@ -1,0 +1,19 @@
+/* Remove hashtags from headers */
+.content h1::before,
+.content h2::before,
+.content h3::before,
+.content h4::before,
+.content h5::before,
+.content h6::before {
+    content: none !important;
+}
+
+/* Ensure headers don't have extra padding */
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    padding-left: 0 !important;
+}
