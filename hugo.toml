@@ -1,16 +1,17 @@
-baseURL = 'https://starlingsoftheslipstream.com/'
+baseURL = 'https://starlingsintheslipstream.com/'
 languageCode = 'en-us'
 title = 'Starlings in the Slipstream'
+copyright = '© Starlings in the Slipstream'
 
 # Theme settings
 theme = 'archie'
 
+# Enable tags
+[taxonomies]
+  tag = 'tags'
+
 # Site settings
 defaultContentLanguage = 'en'
-
-# Pagination
-pagerSize = 5
-pagination.path = "page"
 
 # Allow HTML in markdown
 [markup]
@@ -19,16 +20,21 @@ pagination.path = "page"
       unsafe = true
 
 [params]
+  mode = 'auto'
+  useCDN = true
+  subtitle = 'A music blog'
   # Custom CSS
-  customCSS = ["css/custom.css"]
+  customCSS = ['css/custom.css']
   # Theme parameters
-  defaultTheme = 'auto'
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
 
+# Social media links
+[params.social]
+  github = 'your-github-username' # Optional: Add your GitHub username if you want to link to it
   # Home page settings
   mainSections = ["posts"]
   showAllPostsOnHomePage = true
