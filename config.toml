@@ -1,7 +1,7 @@
 baseURL = "https://starlingsintheslipstream.com/"
 languageCode = "en-us"
 title = "Starlings in the Slipstream"
-theme = "archie"
+theme = "Archie"
 copyright = "© Starlings in the Slipstream"
 
 # Enable tags
