@@ -45,7 +45,7 @@
 .content iframe {
     width: 100% !important;
     max-width: 100% !important;
-    height: 152px !important;
+    height: 100% !important;
     margin: 1em 0 !important;
     border-radius: 12px !important;
     display: block !important;
@@ -91,7 +91,7 @@
     .content iframe {
         width: 100% !important;
         max-width: 100% !important;
-        height: 152px !important;
+        height: 100% !important;
         margin: 1em 0 !important;
         display: block !important;
     }
@@ -102,6 +102,10 @@
     .post iframe,
     .post-content iframe,
     .content iframe {
-        height: 152px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100% !important;
+        margin: 1em 0 !important;
+        display: block !important;
     }
 }
