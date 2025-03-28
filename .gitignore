@@ -8,3 +8,24 @@ hugo_stats.json
 
 # Temporary lock file while building
 /.hugo_build.lock
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE/Editor directories
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node modules if you're using any npm packages
+node_modules/
+
+# Local Netlify folder
+.netlify
