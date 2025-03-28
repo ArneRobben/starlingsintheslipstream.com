@@ -23,8 +23,10 @@
 .body iframe {
     max-width: 100%;
     width: 100%;
+    height: auto; /* Default height for larger screens */
     margin: 1em 0;
     border-radius: 12px;
+    display: block; /* Ensure block-level display */
 }
 
 /* Adjust iframe height for different screen sizes */
@@ -40,4 +42,12 @@
     .body iframe {
         height: 80px;
     }
+}
+
+/* Ensure full content visibility for blog posts */
+.post-content {
+    max-height: none; /* Allows for full content display */
+    overflow: visible !important; /* Ensures content isn't cropped */
+    margin: 1rem 0; /* Adds extra space between posts */
+    padding: 1rem; /* Provides additional spacing within posts */
 }
