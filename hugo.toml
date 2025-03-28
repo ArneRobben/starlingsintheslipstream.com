@@ -1,6 +1,7 @@
-baseURL = 'https://starlingsoftheslipstream.com/'
+baseURL = 'https://starlingsintheslipstream.com/'
 languageCode = 'en-us'
 title = 'Starlings in the Slipstream'
+copyright = '© Starlings in the Slipstream'
 
 # Theme settings
 theme = 'archie'
@@ -20,9 +21,10 @@ pagination.path = "page"
 
 [params]
   mode = 'light'
+  useCDN = true
   subtitle = 'This is Starlings in the Slipstream, a simple space with regularly updated tracks that were subjectively found worth sharing. Mission accomplished if you discover a track you love that wasn’t on your radar before.'
   # Custom CSS
-  customCSS = ["css/custom.css"]
+  customCSS = ['css/custom.css']
   # Theme parameters
   ShowReadingTime = true
   ShowShareButtons = true
