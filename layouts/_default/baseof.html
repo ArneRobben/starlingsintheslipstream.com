@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Site.Title }}</title>
-    {{- partial "header.html" . -}} <!-- Any additional header elements -->
-</head>
-<body>
-    <div class="content">
+<html>
+    {{- partial "header.html" . -}}
+    <body>
+        <div class="content">
+        {{- partial "head.html" . -}}
         {{- block "main" . }}{{- end }}
-        {{- partial "footer.html" . }}
-    </div>
-</body>
+        {{- partial "footer.html" . -}}
+        </div>
+    </body>
 </html>

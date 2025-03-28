@@ -18,29 +18,73 @@
     padding-left: 0 !important;
 }
 
+/* Post container and content styles */
+.post-container,
+.list-item,
+.post-content {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: visible;
+    word-wrap: break-word;
+    margin-bottom: 2em;
+}
+
+.post-container .content,
+.list-item .content {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: visible;
+    word-wrap: break-word;
+}
+
 /* Make embedded content responsive */
 .post-content iframe,
-.body iframe {
+.body iframe,
+.content iframe {
     max-width: 100%;
     width: 100%;
     height: auto; /* Default height for larger screens */
     margin: 1em 0;
     border-radius: 12px;
-    display: block; /* Ensure block-level display */
+    display: block;
 }
 
-/* Adjust iframe height for different screen sizes */
+/* Mobile-specific styles */
 @media screen and (max-width: 768px) {
+    .post-container,
+    .list-item {
+        padding: 0;
+        margin: 1em 0;
+    }
+
     .post-content iframe,
-    .body iframe {
-        height: 152px;
+    .body iframe,
+    .content iframe {
+        height: 200px;
+    }
+
+    /* Ensure text content doesn't overflow */
+    p, h1, h2, h3, h4, h5, h6 {
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Ensure full content visibility */
+    .post-content,
+    .content {
+        max-height: none !important;
+        overflow: visible !important;
+        margin: 1rem 0;
     }
 }
 
+/* Small mobile devices */
 @media screen and (max-width: 480px) {
     .post-content iframe,
-    .body iframe {
-        height: 80px;
+    .body iframe,
+    .content iframe {
+        height: 160px;
     }
 }
 
