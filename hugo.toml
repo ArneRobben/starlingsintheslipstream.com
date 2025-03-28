@@ -19,10 +19,11 @@ pagination.path = "page"
       unsafe = true
 
 [params]
+  mode = 'light'
+  subtitle = 'This is Starlings in the Slipstream, a simple space with regularly updated tracks that were subjectively found worth sharing. Mission accomplished if you discover a track you love that wasn’t on your radar before.'
   # Custom CSS
   customCSS = ["css/custom.css"]
   # Theme parameters
-  defaultTheme = 'auto'
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
