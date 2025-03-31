@@ -1,0 +1,57 @@
+baseURL = 'https://starlingsintheslipstream.com/'
+languageCode = 'en-us'
+title = 'Starlings in the Slipstream'
+copyright = '© Starlings in the Slipstream'
+
+# Theme settings
+theme = 'archie'
+
+# Site settings
+defaultContentLanguage = 'en'
+
+# Pagination
+pagerSize = 5
+pagination.path = "page"
+
+# Allow HTML in markdown
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  mode = 'light'
+  useCDN = true
+  subtitle = 'This is Starlings in the Slipstream, a simple space with regularly updated tracks that were subjectively found worth sharing. Mission accomplished if you discover a track you love that wasn’t on your radar before.'
+  # Custom CSS
+  customCSS = ['css/custom.css']
+  # Theme parameters
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+  # Home page settings
+  mainSections = ["posts"]
+  showAllPostsOnHomePage = true
+  showAllPostsArchive = true
+  showFullTextinMainSection = true
+  enableInlineShortcodes = true
+
+  # List view settings
+  [params.list]
+    showFullContent = true
+    disableSpecial1stPost = true
+  
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Posts'
+    url = '/posts/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 20
