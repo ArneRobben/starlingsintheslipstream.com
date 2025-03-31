@@ -17,37 +17,3 @@
 .content h6 {
     padding-left: 0 !important;
 }
-
-/* Post container and content styles */
-.posts,
-.post,
-.post-content {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow: visible !important;
-    word-wrap: break-word !important;
-    margin-bottom: 2em !important;
-}
-
-.post > a {
-    display: block !important;
-    margin-bottom: 0.5em !important;
-}
-
-.post .meta {
-    display: block !important;
-    margin-bottom: 1em !important;
-}
-
-/* Make embedded content responsive */
-.post iframe,
-.post-content iframe,
-.content iframe {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: 100% !important;
-    margin: 1em 0 !important;
-    border-radius: 12px !important;
-    display: block !important;
-}
-
