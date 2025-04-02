@@ -55,3 +55,7 @@ pagination.path = "page"
     name = 'About'
     url = '/about/'
     weight = 20
+
+[services]
+  [services.googleAnalytics]
+    id = 'G-1GFLMG7346'
