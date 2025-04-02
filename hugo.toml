@@ -59,3 +59,5 @@ pagination.path = "page"
 [services]
   [services.googleAnalytics]
     id = 'G-1GFLMG7346'
+  [services.disqus]
+    shortname = 'arnerobben'
