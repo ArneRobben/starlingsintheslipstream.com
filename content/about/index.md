@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2025-03-25
-layout: "page"
+layout: "single_about"
 ---
 
 This is Starlings in the Slipstream, a simple space with regularly updated tracks that were subjectively found worth sharing. Mission accomplished if you discover a track you love that wasn't on your radar before. 

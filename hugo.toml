@@ -55,9 +55,12 @@ pagination.path = "page"
     name = 'About'
     url = '/about/'
     weight = 20
+  [[menu.main]]
+    identifier = 'suggestions'
+    name = 'Suggestion?'
+    url = '/suggestions/'
+    weight = 20
 
 [services]
   [services.googleAnalytics]
     id = 'G-1GFLMG7346'
-  [services.disqus]
-    shortname = 'arnerobben'
