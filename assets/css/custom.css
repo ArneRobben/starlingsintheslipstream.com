@@ -17,3 +17,18 @@
 .content h6 {
     padding-left: 0 !important;
 }
+
+/* Cusdis Styles without Scrolling */
+#cusdis_thread {
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden; /* Hide any overflow, no scrolling */
+    position: relative;
+}
+
+#cusdis_thread iframe {
+    width: 100%;   /* Full width of the container */
+    height: 100vh; /* Use viewport height or another fixed value */
+    overflow: hidden; /* Hide scrolling within iframe */
+    border: none; /* Optional: remove border for cleaner look */
+}

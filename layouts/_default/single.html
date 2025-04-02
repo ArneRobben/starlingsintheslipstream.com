@@ -1,0 +1,57 @@
+{{ define "main" }}
+<main>
+  <article>
+    <div class="post-container">
+      <!-- Main Content -->
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">{{ .Title }}</h1>
+          <div class="meta">Posted on {{ dateFormat ":date_medium" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
+        </div>
+        {{ if isset .Params "tldr" }}
+        <div class="tldr">
+          <strong>tl;dr:</strong>
+          {{ .Params.tldr }}
+        </div>{{ end }}
+        <section class="body">
+          {{ .Content }}
+        </section>
+        <div class="post-tags">
+          {{ if ne .Type "page" }}
+          {{ if gt .Params.tags 0 }}
+          <nav class="nav tags">
+            <ul class="tags">
+              {{ range .Params.tags }}
+              <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+              {{ end }}
+            </ul>
+          </nav>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- TOC -->
+      {{ if isset .Params "toc" }}
+      <div class="toc">
+        <strong>Table of contents:</strong>
+        {{ .TableOfContents }}
+      </div>
+      {{ end }}
+    </div>
+
+    <!-- Comments section - only shown on suggestions page -->
+    <div id="cusdis_thread"
+        data-host="https://cusdis.com"
+        data-app-id="940efda3-a3c8-46a8-8051-c12312c00226"
+        data-page-id="{{ .File.UniqueID }}"
+        data-page-url="{{ .Permalink }}"
+        data-page-title="{{ .Title }}"
+        data-theme="auto"
+        >
+    </div>
+    <script async src="https://cusdis.com/js/cusdis.es.js"></script>
+
+  </article>
+</main>
+{{ end }}
