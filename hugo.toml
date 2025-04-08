@@ -1,6 +1,7 @@
 baseURL = 'https://starlingsintheslipstream.com/'
 languageCode = 'en-us'
 title = 'Starlings in the Slipstream'
+keywords = ['blog', 'music', 'indie', 'alternative music', 'discover', 'listen']
 copyright = '© Starlings in the Slipstream'
 
 # Theme settings
