@@ -66,8 +66,8 @@ pagination.path = "page"
   [services.googleAnalytics]
     id = 'G-1GFLMG7346'
 
-title = 'Blog'
 [sitemap]
-  changefreq = 'weekly'
-  disable = true
-  priority = 0.8
+  changeFreq = ''
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1
