@@ -67,7 +67,7 @@ pagination.path = "page"
     id = 'G-1GFLMG7346'
 
 [sitemap]
-  changeFreq = ''
+  changeFreq = 'weekly'
   disable = false
   filename = 'sitemap.xml'
-  priority = -1
+  priority = 0.8
