@@ -1,4 +1,4 @@
-baseURL = 'https://www.starlingsintheslipstream.com/'
+baseURL = 'https://starlingsintheslipstream.com/'
 languageCode = 'en-uk'
 title = 'Starlings in the Slipstream'
 keywords = ['blog', 'music', 'indie', 'alternative music', 'discover', 'listen', 'starlingsintheslipstream']
@@ -32,6 +32,7 @@ pagination.path = "page"
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+  canonifyurls = true
 
   # Home page settings
   mainSections = ["posts"]
