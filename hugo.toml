@@ -11,7 +11,7 @@ theme = 'archie'
 defaultContentLanguage = 'en'
 
 # Pagination
-pagination.pagerSize = 10
+pagination.pagerSize = 15
 pagination.path = "page"
 
 # Allow HTML in markdown
