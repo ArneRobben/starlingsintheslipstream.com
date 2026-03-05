@@ -1,18 +1,18 @@
 # starlingsintheslipstream.com
-Repo for deployment of starlingsintheslipstream.com
+Repo for deployment of www.starlingsintheslipstream.com
 
 ## Adding a new post
 
 New posts can be generated automatically from a Bandcamp track URL using the helper script:
 
 ```bash
-python3 src/new_post.py <bandcamp_track_url>
+python src/new_post.py <bandcamp_track_url>
 ```
 
 **Example:**
 
 ```bash
-python3 src/new_post.py https://brighteyes.bandcamp.com/track/stairwell-song
+python src/new_post.py https://brighteyes.bandcamp.com/track/stairwell-song
 ```
 
 The script will:
