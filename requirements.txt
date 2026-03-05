@@ -1,2 +1,0 @@
-# No external dependencies required.
-# The new_post.py script uses only the Python standard library.

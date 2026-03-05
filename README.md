@@ -1,5 +1,5 @@
 # starlingsintheslipstream.com
-Repo for deployment of starlingsintheslipstream.com
+Repo for deployment of www.starlingsintheslipstream.com
 
 ## Adding a new post
 
